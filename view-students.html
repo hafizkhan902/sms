@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Students</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student List</h1>
+        <nav>
+            <ul>
+                <li><a href="teacher-dashboard.html">Dashboard</a></li>
+                <li><a href="add-student.html">Add Student</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="student-list">
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Class</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Username</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsList">
+                    <!-- Student data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="view-students.js"></script>
+    <script src="teacher-dashboard.js"></script>
+</body>
+</html> 

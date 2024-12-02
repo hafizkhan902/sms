@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Student</h1>
+        <nav>
+            <ul>
+                <li><a href="teacher-dashboard.html">Dashboard</a></li>
+                <li><a href="view-students.html">View Students</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h2>Edit Student Details</h2>
+        <form id="editStudentForm">
+            <input type="text" id="name" placeholder="Student Name" required>
+            <input type="text" id="rollNo" placeholder="Roll Number" required readonly>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="New Password">
+            <input type="password" id="confirmPassword" placeholder="Confirm New Password">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="class" placeholder="Class" required>
+            <button type="submit">Update Student</button>
+        </form>
+    </div>
+
+    <script src="edit-student.js"></script>
+    <script src="teacher-dashboard.js"></script>
+</body>
+</html> 

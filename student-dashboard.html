@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-page student-theme">
+    <div class="dashboard-wrapper">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-avatar">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h2 id="studentName">Student Name</h2>
+                <p id="studentClass">Class</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#profile" class="active">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#courses">
+                    <i class="fas fa-book-reader"></i>
+                    <span>My Courses</span>
+                </a>
+                <a href="#assignments">
+                    <i class="fas fa-tasks"></i>
+                    <span>Assignments</span>
+                </a>
+                <a href="#grades">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Grades</span>
+                </a>
+                <a href="#" id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </div>
+
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <h1>Welcome Back, <span id="studentNameHeader"></span>!</h1>
+                <div class="header-actions">
+                    <span id="currentDate"></span>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Roll Number</h3>
+                            <p id="studentRoll"></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Current Class</h3>
+                            <p id="studentClassInfo"></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Total Courses</h3>
+                            <p>6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h2>Student Information</h2>
+                    <div class="profile-details">
+                        <div class="detail-group">
+                            <label>Full Name</label>
+                            <p id="studentFullName"></p>
+                        </div>
+                        <div class="detail-group">
+                            <label>Email</label>
+                            <p id="studentEmail"></p>
+                        </div>
+                        <div class="detail-group">
+                            <label>Phone</label>
+                            <p id="studentPhone"></p>
+                        </div>
+                        <div class="detail-group">
+                            <label>Username</label>
+                            <p id="studentUsername"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-section">
+                    <h2>Recent Activities</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="activity-details">
+                                <h4>Assignment Submitted</h4>
+                                <p>Mathematics Assignment #3</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-book"></i>
+                            <div class="activity-details">
+                                <h4>Course Material Updated</h4>
+                                <p>Physics Chapter 5 Notes</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="student-dashboard.js"></script>
+</body>
+</html> 

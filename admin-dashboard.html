@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-page admin-theme">
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-avatar">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h2>Administrator</h2>
+                <p>System Admin</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#profile" class="active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="add-teacher.html">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Add Teacher</span>
+                </a>
+                <a href="view-teachers.html">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>View Teachers</span>
+                </a>
+                <a href="add-student.html">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Add Student</span>
+                </a>
+                <a href="view-students.html">
+                    <i class="fas fa-users"></i>
+                    <span>View Students</span>
+                </a>
+                <a href="#" id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <h1>Welcome, Administrator!</h1>
+                <div class="header-actions">
+                    <span id="currentDate"></span>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <!-- Quick Stats -->
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Total Students</h3>
+                            <p id="totalStudents">0</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Total Teachers</h3>
+                            <p id="totalTeachers">0</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Active Classes</h3>
+                            <p>8</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Overview -->
+                <div class="profile-section">
+                    <h2>System Overview</h2>
+                    <div class="profile-details">
+                        <div class="detail-group">
+                            <label>System Status</label>
+                            <p>Active</p>
+                        </div>
+                        <div class="detail-group">
+                            <label>Last Backup</label>
+                            <p>Today, 3:30 PM</p>
+                        </div>
+                        <div class="detail-group">
+                            <label>Server Load</label>
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html> 

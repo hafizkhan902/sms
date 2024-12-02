@@ -1,0 +1,40 @@
+{
+    "students": [
+        {
+            "name": "Imtiaz Hossain",
+            "rollNo": "221-35-953",
+            "username": "imtiaz953",
+            "password": "221-35-953",
+            "email": "hkkhan074@gmail.com",
+            "phone": "01645272591",
+            "class": "7th"
+        },
+        {
+            "name": "noman",
+            "rollNo": "221-35-960",
+            "username": "noman",
+            "password": "noman12",
+            "email": "hkkhan074@gmail.com",
+            "phone": "01645272591",
+            "class": "12A"
+        },
+        {
+            "name": "sawa",
+            "rollNo": "22",
+            "username": "sawa1",
+            "password": "sawa2",
+            "email": "hkkhan074@gmail.com",
+            "phone": "01645272591",
+            "class": "22d"
+        },
+        {
+            "name": "ghsd",
+            "rollNo": "33",
+            "username": "dd2",
+            "password": "ee3",
+            "email": "hkkhan074@gmail.com",
+            "phone": "01645272591",
+            "class": "22e"
+        }
+    ]
+}

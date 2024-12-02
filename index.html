@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our School</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Excellence in Education</h2>
+                <p class="hero-subtitle">Empowering minds, shaping futures</p>
+                <div class="hero-text">
+                    <p>Welcome to a place where learning meets innovation</p>
+                    <p>Join us in creating tomorrow's leaders</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/education.svg" alt="Education illustration">
+            </div>
+        </section>
+
+        <section class="portals">
+            <div class="portal-card">
+                <h3>Student Portal</h3>
+                <div class="portal-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <p>Access your academic information</p>
+                <button onclick="window.location.href='student-login.html'">Login</button>
+            </div>
+
+            <div class="portal-card">
+                <h3>Teacher Portal</h3>
+                <div class="portal-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <p>Manage your classes and students</p>
+                <button onclick="window.location.href='teacher-login.html'">Login</button>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Our School</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We are committed to providing quality education and fostering a nurturing environment for our students.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Excellence in Teaching</li>
+                        <li><i class="fas fa-check"></i> Modern Facilities</li>
+                        <li><i class="fas fa-check"></i> Dedicated Faculty</li>
+                        <li><i class="fas fa-check"></i> Student Success</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="images/school.svg" alt="School building">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our School. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize student data from JSON file when the page loads
+        async function initializeStudentData() {
+            try {
+                const response = await fetch('students.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    localStorage.setItem('studentsData', JSON.stringify(data));
+                }
+            } catch (error) {
+                console.error('Error initializing student data:', error);
+            }
+        }
+        
+        // Run initialization when page loads
+        document.addEventListener('DOMContentLoaded', initializeStudentData);
+    </script>
+</body>
+</html> 

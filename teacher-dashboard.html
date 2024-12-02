@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-graduation-cap"></i> Teacher Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#students"><i class="fas fa-users"></i> Students</a></li>
+                <li><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="welcome-banner">
+        <div class="banner-content">
+            <h2>Welcome Back, Teacher!</h2>
+            <p>Manage your students and classes efficiently</p>
+        </div>
+    </div>
+
+    <main class="dashboard-container">
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-chalkboard"></i>
+                <h3>Classes</h3>
+                <p>5</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-clock"></i>
+                <h3>Active Hours</h3>
+                <p>120</p>
+            </div>
+        </div>
+
+        <div class="dashboard-cards">
+            <div class="dashboard-card">
+                <div class="card-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h3>Add Student</h3>
+                <p>Add new student details to the system</p>
+                <button onclick="window.location.href='add-student.html'">
+                    <i class="fas fa-plus"></i> Add Student
+                </button>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-icon">
+                    <i class="fas fa-list"></i>
+                </div>
+                <h3>View Students</h3>
+                <p>View and manage existing students</p>
+                <button onclick="window.location.href='view-students.html'">
+                    <i class="fas fa-eye"></i> View List
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="teacher-dashboard.js"></script>
+</body>
+</html> 
